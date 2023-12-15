@@ -4,9 +4,9 @@
  */
 package frames;
 
-import Interface.IMenu;
+//import Interface.IMenu;
 import domino.Jugador;
-import presenter.PresenterMenu;
+//import presenter.PresenterMenu;
 
 /**
  *
@@ -16,17 +16,18 @@ public class FrmInicio extends javax.swing.JFrame {
 
     
     public Jugador jugador=new Jugador();
-    public IMenu presenterMenu;
+//    public IMenu presenterMenu;
     FrmConfig frm = new FrmConfig(this);
     /**
      * Creates new form FrmInicio
      */
-    public FrmInicio(IMenu presenterMenu) {
-        initComponents();
-        this.presenterMenu=presenterMenu;
-        
-        
-    }
+//    public FrmInicio(IMenu presenterMenu) {
+//        initComponents();
+//        this.presenterMenu=presenterMenu;
+//        
+//        
+//    }
+    public FrmInicio(){initComponents();}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -159,7 +160,7 @@ public class FrmInicio extends javax.swing.JFrame {
     private void btnPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlayActionPerformed
         // TODO add your handling code here:
         if (jugador!=null) {
-            presenterMenu.setJugador(jugador);
+            //presenterMenu.setJugador(jugador);
         }
         this.dispose();
         /*FrmLobby frm = new FrmLobby();

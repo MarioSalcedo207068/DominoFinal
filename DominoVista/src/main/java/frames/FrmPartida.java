@@ -4,14 +4,14 @@
  */
 package frames;
 
-import Interface.IPartida;
+//import Interface.IPartida;
 import domino.Ficha;
 import domino.Jugador;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.util.List;
 import javax.swing.JOptionPane;
-import presenter.PresenterPartida;
+//import presenter.PresenterPartida;
 
 
 /**
@@ -22,21 +22,21 @@ public class FrmPartida extends javax.swing.JFrame {
 
     PanelFichas panelFichasExterno;
     PanelFichasJugador panelFichasJugador;
-    IPartida presenterPartida;
+//    IPartida presenterPartida;
 
     /**
      * Creates new form frmPartida
      */
-    public FrmPartida(List<Ficha> fichasJugador, Jugador jugador, IPartida presenterPartida,
-            List<Ficha> fichasTablero) {
-        initComponents();
-        panelFichasExterno = new PanelFichas(this, fichasTablero);
-        this.presenterPartida = presenterPartida;
-        panelFichasJugador = new PanelFichasJugador(fichasJugador, this);
-        this.cargarTablero();
-        this.cargarTableroJugador();
-        this.namePlayer1.setText(jugador.getNombre());
-    }
+//    public FrmPartida(List<Ficha> fichasJugador, Jugador jugador, IPartida presenterPartida,
+//            List<Ficha> fichasTablero) {
+//        initComponents();
+//        panelFichasExterno = new PanelFichas(this, fichasTablero);
+//        this.presenterPartida = presenterPartida;
+//        panelFichasJugador = new PanelFichasJugador(fichasJugador, this);
+//        this.cargarTablero();
+//        this.cargarTableroJugador();
+//        this.namePlayer1.setText(jugador.getNombre());
+//    }
 
     public FrmPartida() {
         initComponents();
@@ -73,11 +73,11 @@ public class FrmPartida extends javax.swing.JFrame {
                 : null;
         if (panelFichasExterno.fichas.isEmpty()) {
             if (fichajugador.validarMula()) {
-                presenterPartida.moverFicha(fichajugador, null);
+//                presenterPartida.moverFicha(fichajugador, null);
                 panelFichasJugador.fichaSeleccionadaJugador = null;
             }
         } else if (fichajugador != null && fichaTablero != null) {
-            presenterPartida.moverFicha(fichajugador, fichaTablero);
+//            presenterPartida.moverFicha(fichajugador, fichaTablero);
             panelFichasJugador.fichaSeleccionadaJugador = null;
             panelFichasExterno.fichaSeleccionadaTablero = null;
         }
